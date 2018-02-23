@@ -3100,6 +3100,11 @@
         <para>The world-space position that the joint will attempt to move the body to.</para>
       </summary>
     </member>
+    <member name="A:UnityEngine.Physics2DModule">
+      <summary>
+        <para>The Physics2d module implements 2D physics in Unity.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.WheelJoint2D">
       <summary>
         <para>The wheel joint allows the simulation of wheels by providing a constraining suspension motion with an optional motor.</para>

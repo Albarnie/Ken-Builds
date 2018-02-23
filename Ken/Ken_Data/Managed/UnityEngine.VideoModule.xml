@@ -35,6 +35,11 @@
         <para>The sample provider for the specified track.</para>
       </returns>
     </member>
+    <member name="A:UnityEngine.VideoModule">
+      <summary>
+        <para>The Video module lets you play back video files in your content.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.Video.Video3DLayout">
       <summary>
         <para>Types of 3D content layout within a video.</para>

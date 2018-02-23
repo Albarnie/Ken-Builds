@@ -7077,6 +7077,36 @@ Windows Store Apps: tablets are treated as desktop machines, thus DeviceType.Han
         <para>True if the light casts shadows, otherwise False.</para>
       </summary>
     </member>
+    <member name="T:UnityEngine.Experimental.GlobalIllumination.FalloffType">
+      <summary>
+        <para>Available falloff models for baking.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.GlobalIllumination.FalloffType.InverseSquared">
+      <summary>
+        <para>Inverse squared distance falloff model.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.GlobalIllumination.FalloffType.InverseSquaredNoRangeAttenuation">
+      <summary>
+        <para>Inverse squared distance falloff model (without smooth range attenuation).</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.GlobalIllumination.FalloffType.Legacy">
+      <summary>
+        <para>Quadratic falloff model.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.GlobalIllumination.FalloffType.Linear">
+      <summary>
+        <para>Linear falloff model.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.GlobalIllumination.FalloffType.Undefined">
+      <summary>
+        <para>Falloff model is undefined.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.Experimental.GlobalIllumination.LightDataGI">
       <summary>
         <para>The interop structure to pass light information to the light baking backends. There are helper structures for Directional, Point, Spot and Rectangle lights to correctly initialize this structure.</para>
@@ -7090,6 +7120,11 @@ Windows Store Apps: tablets are treated as desktop machines, thus DeviceType.Han
     <member name="F:UnityEngine.Experimental.GlobalIllumination.LightDataGI.coneAngle">
       <summary>
         <para>The cone angle for spot lights.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.GlobalIllumination.LightDataGI.falloff">
+      <summary>
+        <para>The falloff model to use for baking point and spot lights.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.Experimental.GlobalIllumination.LightDataGI.indirectColor">
@@ -7369,6 +7404,11 @@ Windows Store Apps: tablets are treated as desktop machines, thus DeviceType.Han
         <para>The direct light color.</para>
       </summary>
     </member>
+    <member name="F:UnityEngine.Experimental.GlobalIllumination.PointLight.falloff">
+      <summary>
+        <para>The falloff model to use for baking the point light.</para>
+      </summary>
+    </member>
     <member name="F:UnityEngine.Experimental.GlobalIllumination.PointLight.indirectColor">
       <summary>
         <para>The indirect light color.</para>
@@ -7472,6 +7512,11 @@ Windows Store Apps: tablets are treated as desktop machines, thus DeviceType.Han
     <member name="F:UnityEngine.Experimental.GlobalIllumination.SpotLight.coneAngle">
       <summary>
         <para>The outer angle for the spot light.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.GlobalIllumination.SpotLight.falloff">
+      <summary>
+        <para>The falloff model to use for baking the spot light.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.Experimental.GlobalIllumination.SpotLight.indirectColor">
@@ -32544,6 +32589,11 @@ See Also: JobHandle.CombineDependencies.</para>
         <para>Initializes a new instance of UnityAPICompatibilityVersionAttribute.</para>
       </summary>
       <param name="version">Unity version that this assembly with compatible with.</param>
+    </member>
+    <member name="A:UnityEngine.CoreModule">
+      <summary>
+        <para>The Core module implements basic classes required for Unity to function.</para>
+      </summary>
     </member>
     <member name="T:UnityEngine.UserAuthorization">
       <summary>

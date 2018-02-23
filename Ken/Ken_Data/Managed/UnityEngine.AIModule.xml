@@ -1362,5 +1362,10 @@ The newly built NavMeshData, or null if the NavMeshData was empty or an error oc
         <para>Manually specified type of link.</para>
       </summary>
     </member>
+    <member name="A:UnityEngine.AIModule">
+      <summary>
+        <para>The AI module implements the path finding features in Unity.</para>
+      </summary>
+    </member>
   </members>
 </doc>
