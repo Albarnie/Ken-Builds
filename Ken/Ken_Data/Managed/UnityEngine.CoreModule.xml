@@ -2073,7 +2073,7 @@ Here is an example of handling the callback:</para>
     </member>
     <member name="F:UnityEngine.Assertions.Assert.raiseExceptions">
       <summary>
-        <para>Should an exception be thrown on a failure.</para>
+        <para>Whether Unity should throw an exception on a failure.</para>
       </summary>
     </member>
     <member name="M:UnityEngine.Assertions.Assert.AreApproximatelyEqual(System.Single,System.Single)">
@@ -5426,7 +5426,7 @@ The default value is Camera.MonoOrStereoscopicEye.Left, so Camera.MonoOrStereosc
     </member>
     <member name="T:UnityEngine.Coroutine">
       <summary>
-        <para>MonoBehaviour.StartCoroutine returns a Coroutine. Instances of this class are only used to reference these coroutines and do not hold any exposed properties or functions.</para>
+        <para>MonoBehaviour.StartCoroutine returns a Coroutine. Instances of this class are only used to reference these coroutines, and do not hold any exposed properties or functions.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.CrashReport">
@@ -6508,7 +6508,7 @@ The default value is Camera.MonoOrStereoscopicEye.Left, so Camera.MonoOrStereosc
       <summary>
         <para>Enumeration for SystemInfo.deviceType, denotes a coarse grouping of kinds of devices.
 
-Windows Store Apps: tablets are treated as desktop machines, thus DeviceType.Handheld will only be returned for Windows Phones.</para>
+Universal Windows Platform: tablets are treated as desktop machines, thus DeviceType.Handheld will only be returned for Windows Phones and IoT family devices.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.DeviceType.Console">
@@ -10691,7 +10691,7 @@ All of the commands within the buffer are guaranteed to be executed on the same 
     </member>
     <member name="P:UnityEngine.GameObject.activeInHierarchy">
       <summary>
-        <para>Is the GameObject active in the scene?</para>
+        <para>Defines whether the GameObject is active in the Scene.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.GameObject.activeSelf">
@@ -12525,7 +12525,7 @@ Color buffers to render into (for multiple render target effects).</param>
     </member>
     <member name="F:UnityEngine.HideFlags.HideAndDontSave">
       <summary>
-        <para>A combination of not shown in the hierarchy, not saved to to scenes and not unloaded by The object will not be unloaded by Resources.UnloadUnusedAssets.</para>
+        <para>The GameObject is not shown in the Hierarchy, not saved to to Scenes, and not unloaded by Resources.UnloadUnusedAssets.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.HideFlags.HideInHierarchy">
@@ -17480,9 +17480,12 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="M:UnityEngine.Mathf.Cos(System.Single)">
       <summary>
-        <para>Returns the cosine of angle f in radians.</para>
+        <para>Returns the cosine of angle f.</para>
       </summary>
-      <param name="f"></param>
+      <param name="f">The input angle, in radians.</param>
+      <returns>
+        <para>The return value between -1 and 1.</para>
+      </returns>
     </member>
     <member name="F:UnityEngine.Mathf.Deg2Rad">
       <summary>
@@ -17509,7 +17512,7 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="M:UnityEngine.Mathf.Floor(System.Single)">
       <summary>
-        <para>Returns the largest integer smaller to or equal to f.</para>
+        <para>Returns the largest integer smaller than or equal to f.</para>
       </summary>
       <param name="f"></param>
     </member>
@@ -17751,9 +17754,9 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="M:UnityEngine.Mathf.Sin(System.Single)">
       <summary>
-        <para>Returns the sine of angle f in radians.</para>
+        <para>Returns the sine of angle f.</para>
       </summary>
-      <param name="f">The argument as a radian.</param>
+      <param name="f">The input angle, in radians.</param>
       <returns>
         <para>The return value between -1 and +1.</para>
       </returns>
@@ -27116,11 +27119,6 @@ See RenderTexture.useMipMap.</para>
     <member name="F:UnityEngine.RuntimePlatform.Switch">
       <summary>
         <para>In the player on Nintendo Switch.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.RuntimePlatform.TizenPlayer">
-      <summary>
-        <para>In the player on Tizen.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.RuntimePlatform.WebGLPlayer">

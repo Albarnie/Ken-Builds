@@ -2569,7 +2569,7 @@
     </member>
     <member name="P:UnityEngine.Rigidbody2D.mass">
       <summary>
-        <para>Mass of the rigidbody.</para>
+        <para>Mass of the Rigidbody.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Rigidbody2D.position">
