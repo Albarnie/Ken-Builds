@@ -1859,14 +1859,14 @@ Here is an example of handling the callback:</para>
     </member>
     <member name="M:UnityEngine.Application.LoadLevel(System.Int32)">
       <summary>
-        <para>Loads the level by its name or index.</para>
+        <para>Note: This is now obsolete. Use SceneManager.LoadScene instead.</para>
       </summary>
       <param name="index">The level to load.</param>
       <param name="name">The name of the level to load.</param>
     </member>
     <member name="M:UnityEngine.Application.LoadLevel(System.String)">
       <summary>
-        <para>Loads the level by its name or index.</para>
+        <para>Note: This is now obsolete. Use SceneManager.LoadScene instead.</para>
       </summary>
       <param name="index">The level to load.</param>
       <param name="name">The name of the level to load.</param>
@@ -12855,6 +12855,12 @@ All of the commands within the buffer are guaranteed to be executed on the same 
       <summary>
         <para>Get if the hash value is valid or not. (Read Only)</para>
       </summary>
+    </member>
+    <member name="M:UnityEngine.Hash128.Compute(System.String)">
+      <summary>
+        <para>Compute a hash of the input string.</para>
+      </summary>
+      <param name="hashString"></param>
     </member>
     <member name="M:UnityEngine.Hash128.#ctor(System.UInt32,System.UInt32,System.UInt32,System.UInt32)">
       <summary>
